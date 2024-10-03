@@ -1,4 +1,4 @@
-#firstlyy we linked both of them then performed the code. here first one that is echo is the instruction and hello is the argument
+#firstly we linked both of them then performed the code. here first one that is echo is the instruction and hello is the argument
 
 ssh -i ./key hacker@dojo.pwn.college
 Connected!
