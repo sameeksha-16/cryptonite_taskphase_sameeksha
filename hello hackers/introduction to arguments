@@ -1,1 +1,11 @@
+#firstlyy we linked both of them then performed the code. here first one that is echo is the instruction and hello is the argument
 
+ssh -i ./key hacker@dojo.pwn.college
+Connected!
+hacker@hello~intro-to-arguments:~$ echo hello
+hello
+hacker@hello~intro-to-arguments:~$ echo hello hackers
+hello hackers
+hacker@hello~intro-to-arguments:~$ hello hackers
+Success! Here is your flag:
+pwn.college{QGSYzmHrtcokEdgj0oKI-aqXfVb.dhjNyUDL5MTM1czW}
