@@ -77,3 +77,18 @@ pwn.college{MvT8f5pIUXOIYz708hK-FcxmsdQ.dZTOwUDL5MTM1czW}
 
 
 
+#hidden files
+so while using ls command it doesn't display all the files it hides the ones which begin with a '.' so to view that we need to use the '-a' with the ls command.we can first go into the '/' directory and then use 'ls -a' command or else we can directly use 'ls -a /' command to get the location of flag file.next to view the contents we need to ise the cat command.
+
+sameeksha03@DESKTOP-965QKSJ:~$  ssh -i ./key hacker@dojo.pwn.college
+Connected!
+hacker@commands~hidden-files:~$ cd /
+hacker@commands~hidden-files:/$ ls -a
+.   .dockerenv           bin   challenge  etc   lib    lib64   media  nix  proc  run   srv  tmp  var
+..  .flag-3209247525160  boot  dev        home  lib32  libx32  mnt    opt  root  sbin  sys  usr
+hacker@commands~hidden-files:/$ cat /.flag-3209247525160
+pwn.college{MxIB9KyoWeoGBnofbwWyT0dVyIo.dBTN4QDL5MTM1czW}
+
+
+
+
