@@ -34,3 +34,17 @@ hacker@man~reading-manuals:/challenge$ ./challenge --ujdass 445
 Correct usage! Your flag: pwn.college{QJujdFassPHBbLE4hRPIpKXibvl.dRTM4QDL5MTM1czW}
 Correct argument! Here is the /flag file:
 pwn.college{UDxpg-oZ9V2uXyqdYa3BpfHoXr9.dVjM5QDL5MTM1czW}
+
+
+
+#searching manuals
+to search use '/' followed by the keyword, it will highlight the mathches next use 'n' to go to next result and 'N' to go to the previous result.
+
+sameeksha03@DESKTOP-965QKSJ:~$ ssh -i ./key hacker@dojo.pwn.college
+Connected!
+hacker@man~searching-manuals:~$ man challenge
+hacker@man~searching-manuals:~$ cd /
+hacker@man~searching-manuals:/$ cd /challenge
+hacker@man~searching-manuals:/challenge$ ./challenge  --snhl
+Initializing...
+Correct usage! Your flag: pwn.college{8iNZwcyDm8ySUottMFzFWxfjTq6.dVTM4QDL5MTM1czW}
