@@ -28,4 +28,14 @@ pwn.college{0OHXaLJQfK6TXM3zJVv0A7rggtr.dBjM5QDL5MTM1czW}
 
 
 
+#grepping for a needle in haystack
+if the file we want to read is too large and we just want to search for particularly few lines in the file instead of using cat we can use grep. this will help us to find string with that particular substring in the file whose absolute path is mentioned
+
+
+Connected!
+hacker@commands~grepping-for-a-needle-in-a-haystack:~$ grep pwn.college /challenge/data.txt
+pwn.college{Ecttw1egpoYsMJ9CtWyCjpRoQKx.ddTM4QDL5MTM1czW}
+
+
+
 
