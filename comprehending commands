@@ -38,4 +38,17 @@ pwn.college{Ecttw1egpoYsMJ9CtWyCjpRoQKx.ddTM4QDL5MTM1czW}
 
 
 
+#listing files
+the ls command is used when we want to know what files or directories are there in the argument of 'ls <>'.here on doing ls /challenge we could see that the usual run command was renamed to something else so we ran the file accordingly to get the flag.
+
+sameeksha03@DESKTOP-965QKSJ:~$  ssh -i ./key hacker@dojo.pwn.college
+Connected!
+hacker@commands~listing-files:~$ ls /challenge
+2167-renamed-run-28610  DESCRIPTION.md
+hacker@commands~listing-files:~$ /challenge/2167-renamed-run-28610
+Yahaha, you found me! Here is your flag:
+pwn.college{cm6j6opw7uACTwoQasoM_30ZWaN.dhjM4QDL5MTM1czW}
+
+
+
 
