@@ -27,3 +27,13 @@ pwn.college{sSc-DcIIYKXz5MUT6Y-NWEqqX4l.dBTN1QDL5MTM1czW}
 
 
 
+#implicit relative path
+
+sameeksha03@DESKTOP-965QKSJ:~$ ssh -i ./key hacker@dojo.pwn.college
+Connected!
+hacker@paths~implicit-relative-path:~$ cd /challenge
+hacker@paths~implicit-relative-path:/challenge$ ./run
+Correct!!!
+./run is a relative path, invoked from the right directory!
+Here is your flag:
+pwn.college{A0SMSbc9TflGpoBamEbzIQgA7W7.dFTN1QDL5MTM1czW}
