@@ -10,3 +10,16 @@ hacker@man~learning-from-documentation:/$ /challenge/challenge --giveflag
 Correct argument! Here is your flag:
 pwn.college{4Oh15mjGOmk0DgDZurPBYGskiYr.dRjM5QDL5MTM1czW}
 hacker@man~learning-from-documentation:/$
+
+
+
+#learning complex usage
+here the --printfile has an argument(the path) /flag while it itself is an argument to /challenge/challenge
+
+
+
+sameeksha03@DESKTOP-965QKSJ:~$  ssh -i ./key hacker@dojo.pwn.college
+Connected!
+hacker@man~learning-complex-usage:~$ /challenge/challenge --printfile /flag
+Correct argument! Here is the /flag file:
+pwn.college{UDxpg-oZ9V2uXyqdYa3BpfHoXr9.dVjM5QDL5MTM1czW}
