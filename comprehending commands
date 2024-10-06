@@ -9,3 +9,23 @@ pwn.college{cUp1f4erQBWt_snGO5n7EGQ7rrn.dFzN1QDL5MTM1czW}
 
 
 
+
+# more catting practice
+for this we couldn't change the directory using cd so what we did was cat then <absolute path>
+
+sameeksha03@DESKTOP-965QKSJ:~$  ssh -i ./key hacker@dojo.pwn.college
+
+
+Connected!
+
+You cannot use the 'cd' command in this level, and must retrieve the flag by
+absolute path. Plus, I hid the flag in a different directory! You can find it
+in the file /usr/share/mime/flag. Go cat it out **without** cding into that
+directory!
+hacker@commands~more-catting-practice:~$
+hacker@commands~more-catting-practice:~$ cat /usr/share/mime/flag
+pwn.college{0OHXaLJQfK6TXM3zJVv0A7rggtr.dBjM5QDL5MTM1czW}
+
+
+
+
