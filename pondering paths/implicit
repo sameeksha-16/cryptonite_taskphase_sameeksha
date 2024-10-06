@@ -1,1 +1,14 @@
 
+for this first we need to enter into the root directory using cd then our cwd that is current working directory will become the root one.next we will run the challenge/run but this time without the / in front because our cwd is / already
+
+sameeksha03@DESKTOP-965QKSJ:~$  ssh -i ./key hacker@dojo.pwn.college
+Connected!
+hacker@paths~implicit-relative-paths-from-:~$ cd /
+hacker@paths~implicit-relative-paths-from-:/$ challenge/run
+Correct!!!
+challenge/run is a relative path, invoked from the right directory!
+Here is your flag:
+pwn.college{UnD_8s9sKgbj2NVMWIm3rut_ccb.dlDN1QDL5MTM1czW}
+hacker@paths~implicit-relative-paths-from-:/$
+
+
