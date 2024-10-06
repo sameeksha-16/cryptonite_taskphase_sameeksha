@@ -65,4 +65,15 @@ pwn.college{0wMcCCWG8hh6VDbuPG_jrOJSrfa.dBzM4QDL5MTM1czW}
 
 
 
+#removing files
+if we have excess files in a directory we can use this command to remove them. Here a delet_me file was created inside the home directory and we deleted it using rm command.
+
+Connected!
+hacker@commands~removing-files:~$ rm delete_me
+hacker@commands~removing-files:~$ /challenge/check
+Excellent removal. Here is your reward:
+pwn.college{MvT8f5pIUXOIYz708hK-FcxmsdQ.dZTOwUDL5MTM1czW}
+
+
+
 
