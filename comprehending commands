@@ -52,3 +52,17 @@ pwn.college{cm6j6opw7uACTwoQasoM_30ZWaN.dhjM4QDL5MTM1czW}
 
 
 
+#touching files
+here we learnt how to create files using 'touch' command. firstly we went into a directory tmp using cd command and then we created two files namely 'pwn' and 'college' in it.
+
+Connected!
+hacker@commands~touching-files:~$ cd /tmp
+hacker@commands~touching-files:/tmp$ touch pwn
+hacker@commands~touching-files:/tmp$ touch college
+hacker@commands~touching-files:/tmp$ /challenge/run
+Success! Here is your flag:
+pwn.college{0wMcCCWG8hh6VDbuPG_jrOJSrfa.dBzM4QDL5MTM1czW}
+
+
+
+
