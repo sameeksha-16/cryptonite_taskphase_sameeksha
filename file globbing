@@ -16,3 +16,18 @@ hacker@globbing~matching-with-:~$ cd /?ha??enge
 hacker@globbing~matching-with-:/challenge$ /challenge/run
 You ran me with the working directory of /challenge! Here is your flag:
 pwn.college{0IovPNlYhcdoWpW8eyJBWejfIay.dJjM4QDL5MTM1czW}
+
+
+
+#matching with []
+here we first went into /challenge/files then we use the /challenge/run command along with flag_[] command.
+
+
+sameeksha03@DESKTOP-965QKSJ:~$  ssh -i ./key hacker@dojo.pwn.college
+Connected!
+hacker@globbing~matching-with-:~$ cd /challenge/files
+hacker@globbing~matching-with-:/challenge/files$ ls file_[absh]
+file_a  file_b  file_h  file_s
+hacker@globbing~matching-with-:/challenge/files$ /challenge/run file_[absh]
+You got it! Here is your flag!
+pwn.college{MdKD5JILsBPEyGYrUPzkDm_1Mky.dNjM4QDL5MTM1czW}
