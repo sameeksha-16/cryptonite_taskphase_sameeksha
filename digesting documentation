@@ -52,4 +52,17 @@ Correct usage! Your flag: pwn.college{8iNZwcyDm8ySUottMFzFWxfjTq6.dVTM4QDL5MTM1c
 
 
 
+# helpful programs
+in this instead of man command we are using the --help command which gives us description how to get the flag. as in this case we had to use -p to get a secret number and then we used the -g (secret number ) to get the flag.
+
+hacker@man~helpful-programs:/challenge$ ./challenge --print-value
+The secret value is: 653
+hacker@man~helpful-programs:/challenge$ ./challenge -g 653
+Correct usage! Your flag: pwn.college{UsoKu6GBZur53Y9MJ--zyH0kbvZ.ddjM4QDL5MTM1czW}
+
+
+
+
+
+
 # man man
