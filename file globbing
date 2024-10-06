@@ -31,3 +31,14 @@ file_a  file_b  file_h  file_s
 hacker@globbing~matching-with-:/challenge/files$ /challenge/run file_[absh]
 You got it! Here is your flag!
 pwn.college{MdKD5JILsBPEyGYrUPzkDm_1Mky.dNjM4QDL5MTM1czW}
+
+
+
+
+#matching paths with []
+
+sameeksha03@DESKTOP-965QKSJ:~$  ssh -i ./key hacker@dojo.pwn.college
+Connected!
+hacker@globbing~matching-paths-with-:~$ /challenge/run /challenge/files/file_[absh]
+You got it! Here is your flag!
+pwn.college{w_WAYF7Rg57sX8wFM6X8I5lrZMk.dRjM4QDL5MTM1czW}
