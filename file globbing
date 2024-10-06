@@ -5,3 +5,14 @@ hacker@globbing~matching-with-:~$ cd /ch*
 hacker@globbing~matching-with-:/challenge$ /challenge/run
 You ran me with the working directory of /challenge! Here is your flag:
 pwn.college{cJQRLxCDwl5pZXH8E_iUr-3Mh2m.dFjM4QDL5MTM1czW}
+
+
+
+
+# matching with '?'
+here the '?' can represent only a single character.
+
+hacker@globbing~matching-with-:~$ cd /?ha??enge
+hacker@globbing~matching-with-:/challenge$ /challenge/run
+You ran me with the working directory of /challenge! Here is your flag:
+pwn.college{0IovPNlYhcdoWpW8eyJBWejfIay.dJjM4QDL5MTM1czW}
