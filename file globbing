@@ -1,1 +1,7 @@
+#matching with *
+now we need to use '*' to navigate through cd to challenge in less than 4 characters. since we are already in our home directory we will use command cd /ch* to get into th echallenge directory and then run to get the flag
 
+hacker@globbing~matching-with-:~$ cd /ch*
+hacker@globbing~matching-with-:/challenge$ /challenge/run
+You ran me with the working directory of /challenge! Here is your flag:
+pwn.college{cJQRLxCDwl5pZXH8E_iUr-3Mh2m.dFjM4QDL5MTM1czW}
