@@ -1,1 +1,12 @@
+#learning from documentation
 
+sameeksha03@DESKTOP-965QKSJ:~$ ssh -i ./key hacker@dojo.pwn.college
+Connected!
+hacker@man~learning-from-documentation:~$ cd /
+hacker@man~learning-from-documentation:/$ /challenge/challenge ---giveflag
+Incorrect usage! You passed the wrong argument (read the challenge description
+for details).
+hacker@man~learning-from-documentation:/$ /challenge/challenge --giveflag
+Correct argument! Here is your flag:
+pwn.college{4Oh15mjGOmk0DgDZurPBYGskiYr.dRjM5QDL5MTM1czW}
+hacker@man~learning-from-documentation:/$
