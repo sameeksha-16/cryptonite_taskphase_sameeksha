@@ -90,5 +90,97 @@ hacker@commands~hidden-files:/$ cat /.flag-3209247525160
 pwn.college{MxIB9KyoWeoGBnofbwWyT0dVyIo.dBTN4QDL5MTM1czW}
 
 
+#
+a lot of patience is required first of all.the clues keep coming up and we need to continuously enter into directory , check contenets and read it to get the next clue until we get the flag.
+
+
+
+sameeksha03@DESKTOP-965QKSJ:~$  ssh -i ./key hacker@dojo.pwn.college
+Connected!
+hacker@commands~an-epic-filesystem-quest:~$ cd /
+hacker@commands~an-epic-filesystem-quest:/$ ls
+INFO  boot       dev  flag  lib    lib64   media  nix  proc  run   srv  tmp  var
+bin   challenge  etc  home  lib32  libx32  mnt    opt  root  sbin  sys  usr
+hacker@commands~an-epic-filesystem-quest:/$ cat / INFO
+cat: /: Is a directory
+Yahaha, you found me!
+The next clue is in: /usr/lib/python3/dist-packages/sage/geometry/hyperplane_arrangement
+
+The next clue is **hidden** --- its filename starts with a '.' character. You'll need to look for it using special options to 'ls'.
+hacker@commands~an-epic-filesystem-quest:/$ cd /usr/lib/python3/dist-packages/sage/geometry/hyperplane_arrangement
+hacker@commands~an-epic-filesystem-quest:/usr/lib/python3/dist-packages/sage/geometry/hyperplane_arrangement$ ls -a
+.   .MEMO        __pycache__         arrangement.py     hyperplane.py  plot.py
+..  __init__.py  affine_subspace.py  check_freeness.py  library.py
+hacker@commands~an-epic-filesystem-quest:/usr/lib/python3/dist-packages/sage/geometry/hyperplane_arrangement$ cat / .MEMO
+cat: /: Is a directory
+Lucky listing!
+The next clue is in: /opt/busybox/busybox-1.33.2/include/config/feature/show
+
+The next clue is **delayed** --- it will not become readable until you enter the directory with 'cd'.
+hacker@commands~an-epic-filesystem-quest:/usr/lib/python3/dist-packages/sage/geometry/hyperplane_arrangement$ cd /opt/busybox/busybox-1.33.2/include/config/feature/show
+hacker@commands~an-epic-filesystem-quest:/opt/busybox/busybox-1.33.2/include/config/feature/show$ ls
+GIST  script.h  threads.h
+hacker@commands~an-epic-filesystem-quest:/opt/busybox/busybox-1.33.2/include/config/feature/show$ cat /GIST
+cat: /GIST: No such file or directory
+hacker@commands~an-epic-filesystem-quest:/opt/busybox/busybox-1.33.2/include/config/feature/show$ cat / GIST
+cat: /: Is a directory
+Lucky listing!
+The next clue is in: /opt/radare2/binr/radiff2
+
+The next clue is **hidden** --- its filename starts with a '.' character. You'll need to look for it using special options to 'ls'.
+hacker@commands~an-epic-filesystem-quest:/opt/busybox/busybox-1.33.2/include/config/feature/show$ cd /opt/radare2/binr/radiff2
+hacker@commands~an-epic-filesystem-quest:/opt/radare2/binr/radiff2$ ls -a
+.  ..  .TIP  Makefile  meson.build  radiff2  radiff2.c  radiff2.d  radiff2.o
+hacker@commands~an-epic-filesystem-quest:/opt/radare2/binr/radiff2$ cat / .TIP
+cat: /: Is a directory
+Tubular find!
+The next clue is in: /usr/lib/llvm-10/lib/clang/10.0.0/include/cuda_wrappers
+
+The next clue is **hidden** --- its filename starts with a '.' character. You'll need to look for it using special options to 'ls'.
+hacker@commands~an-epic-filesystem-quest:/opt/radare2/binr/radiff2$ cd /usr/lib/llvm-10/lib/clang/10.0.0/include/cuda_wrappers
+hacker@commands~an-epic-filesystem-quest:/usr/lib/llvm-10/lib/clang/10.0.0/include/cuda_wrappers$ ls -a
+.  ..  .REVELATION  algorithm  complex  new
+hacker@commands~an-epic-filesystem-quest:/usr/lib/llvm-10/lib/clang/10.0.0/include/cuda_wrappers$ cat / .REVELATION
+cat: /: Is a directory
+Yahaha, you found me!
+The next clue is in: /opt/angr-management/_internal/angr/procedures/stubs/__pycache__
+
+Watch out! The next clue is **trapped**. You'll need to read it out without 'cd'ing into the directory; otherwise, the clue will self destruct!
+hacker@commands~an-epic-filesystem-quest:/usr/lib/llvm-10/lib/clang/10.0.0/include/cuda_wrappers$ ls /opt/angr-managemen
+t/_internal/angr/procedures/stubs/__pycache__
+CallReturn.cpython-312.pyc             ReturnChar.cpython-312.pyc              b64_decode.cpython-312.pyc
+NUGGET-TRAPPED                         ReturnUnconstrained.cpython-312.pyc     caller.cpython-312.pyc
+NoReturnUnconstrained.cpython-312.pyc  UnresolvableCallTarget.cpython-312.pyc  crazy_scanf.cpython-312.pyc
+Nop.cpython-312.pyc                    UnresolvableJumpTarget.cpython-312.pyc  format_parser.cpython-312.pyc
+PathTerminator.cpython-312.pyc         UserHook.cpython-312.pyc                syscall_stub.cpython-312.pyc
+Redirect.cpython-312.pyc               __init__.cpython-312.pyc
+hacker@commands~an-epic-filesystem-quest:/usr/lib/llvm-10/lib/clang/10.0.0/include/cuda_wrappers$ cat /opt/angr-management/_internal/angr/procedures/stubs/__pycache__/NUGGET-TRAPPED
+Tubular find!
+The next clue is in: /opt/capstone/packages/freebsd/ports/devel/capstone
+
+The next clue is **delayed** --- it will not become readable until you enter the directory with 'cd'.
+hacker@commands~an-epic-filesystem-quest:/usr/lib/llvm-10/lib/clang/10.0.0/include/cuda_wrappers$ cd /opt/capstone/packages/freebsd/ports/devel/capstone
+hacker@commands~an-epic-filesystem-quest:/opt/capstone/packages/freebsd/ports/devel/capstone$ ls
+EVIDENCE  Makefile  pkg-descr  pkg-plist
+hacker@commands~an-epic-filesystem-quest:/opt/capstone/packages/freebsd/ports/devel/capstone$ cat / EVIDENCE
+cat: /: Is a directory
+Great sleuthing!
+The next clue is in: /usr/share/racket/pkgs/racket-doc/json/compiled
+hacker@commands~an-epic-filesystem-quest:/opt/capstone/packages/freebsd/ports/devel/capstone$ cd /usr/share/racket/pkgs/racket-doc/json/compiled
+hacker@commands~an-epic-filesystem-quest:/usr/share/racket/pkgs/racket-doc/json/compiled$ ls
+SNIPPET  info_rkt.dep  info_rkt.zo  json_scrbl.dep  json_scrbl.zo
+hacker@commands~an-epic-filesystem-quest:/usr/share/racket/pkgs/racket-doc/json/compiled$ cat / SNIPPET
+cat: /: Is a directory
+Great sleuthing!
+The next clue is in: /opt/ghidra/Ghidra/Debug/Debugger-agent-lldb
+hacker@commands~an-epic-filesystem-quest:/usr/share/racket/pkgs/racket-doc/json/compiled$ cd /opt/ghidra/Ghidra/Debug/Debugger-agent-lldb
+hacker@commands~an-epic-filesystem-quest:/opt/ghidra/Ghidra/Debug/Debugger-agent-lldb$ ls
+CUE  LICENSE.txt  Module.manifest  lib
+hacker@commands~an-epic-filesystem-quest:/opt/ghidra/Ghidra/Debug/Debugger-agent-lldb$ cat / CUE
+cat: /: Is a directory
+CONGRATULATIONS! Your perserverence has paid off, and you have found the flag!
+It is: pwn.college{8iz_Sh8bRKg28PNtH41SV_znOZw.dljM4QDL5MTM1czW}
+
+
 
 
