@@ -184,3 +184,24 @@ It is: pwn.college{8iz_Sh8bRKg28PNtH41SV_znOZw.dljM4QDL5MTM1czW}
 
 
 
+
+
+
+#making directories 
+here we use the mkdir command to create a directory pwn next we go into the directory using cd command and make a file named college using touch command.
+just to check if the file has been created or not i have used the ls command.
+
+sameeksha03@DESKTOP-965QKSJ:~$  ssh -i ./key hacker@dojo.pwn.college
+Connected!
+hacker@commands~making-directories:~$ cd /tmp
+hacker@commands~making-directories:/tmp$ mkdir pwn
+hacker@commands~making-directories:/tmp$ cd pwn
+hacker@commands~making-directories:/tmp/pwn$ touch college
+hacker@commands~making-directories:/tmp/pwn$ ls
+college
+hacker@commands~making-directories:/tmp/pwn$ /challenge/run
+Success! Here is your flag:
+pwn.college{AL970vxMe4GjCZZAgKC3oPo9UpW.dFzM4QDL5MTM1czW}
+
+
+
