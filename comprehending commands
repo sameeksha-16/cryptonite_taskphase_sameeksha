@@ -1,1 +1,11 @@
+# the cat command
+this command conactenates whatever argument is provided and if noting is mentioned it simply  returns whatever is present in the terminal
+
+sameeksha03@DESKTOP-965QKSJ:~$  ssh -i ./key hacker@dojo.pwn.college
+Connected!
+hacker@commands~cat-not-the-pet-but-the-command:~$ cat ~/flag
+pwn.college{cUp1f4erQBWt_snGO5n7EGQ7rrn.dFzN1QDL5MTM1czW}
+
+
+
 
