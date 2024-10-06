@@ -254,6 +254,19 @@ cat: /usr/local/lib/python3.8/dist-packages/pwnlib/flag: Is a directory
 hacker@commands~finding-files:~$ cat /usr/local/share/radare2/5.9.5/flag
 cat: /usr/local/share/radare2/5.9.5/flag: Is a directory
 hacker@commands~finding-files:~$ cat /usr/share/racket/pkgs/errortrace-lib/errortrace/lang/compiled/flag
+
+
+
+
+#linking files
+
+sameeksha03@DESKTOP-965QKSJ:~$ ssh -i ./key hacker@dojo.pwn.college
+Connected!
+hacker@commands~linking-files:~$ ln -s /flag /home/hacker/not-the-flag
+ln: failed to create symbolic link '/home/hacker/not-the-flag': File exists
+hacker@commands~linking-files:~$ /challenge/catflag
+About to read out the /home/hacker/not-the-flag file!
+pwn.college{I_DespzLO7n3rUnepNk4spPGxtN.dlTM1UDL5MTM1czW}
 pwn.college{Mp89SXWWvJg-zVPuuQrlNtBQEbN.dJzM4QDL5MTM1czW}hacker@commands~finding-files:~$
 
 
