@@ -73,3 +73,25 @@ Correct usage! Your flag: pwn.college{UsoKu6GBZur53Y9MJ--zyH0kbvZ.ddjM4QDL5MTM1c
 
 
 
+
+# help for built ins
+here the challenge is built-in we don't need to go into directories as we did before. using help challenge we got the neccesary info regarding options and the secret code ,using which we could get the flag.
+
+Connected!
+hacker@man~help-for-builtins:~$ help challenge
+challenge: challenge [--fortune] [--version] [--secret SECRET]
+    This builtin command will read you the flag, given the right arguments!
+
+    Options:
+      --fortune         display a fortune
+      --version         display the version
+      --secret VALUE    prints the flag, if VALUE is correct
+
+    You must be sure to provide the right value to --secret. That value
+    is "MXFC3hB-".
+hacker@man~help-for-builtins:~$ challenge --secret MXFC3hB-
+Correct! Here is your flag!
+pwn.college{MXFC3hB-wLWNCGrQPqv4O53i_F8.dRTM5QDL5MTM1czW}
+
+
+
