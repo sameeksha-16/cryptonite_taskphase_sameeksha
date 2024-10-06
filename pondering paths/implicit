@@ -37,3 +37,16 @@ Correct!!!
 ./run is a relative path, invoked from the right directory!
 Here is your flag:
 pwn.college{A0SMSbc9TflGpoBamEbzIQgA7W7.dFTN1QDL5MTM1czW}
+
+
+
+
+home sweet home
+
+sameeksha03@DESKTOP-965QKSJ:~$ ssh -i ./key hacker@dojo.pwn.college
+Connected!
+hacker@paths~home-sweet-home:~$ touch ~/m
+hacker@paths~home-sweet-home:~$ /challenge/run ~/m
+Writing the file to /home/hacker/m!
+... and reading it back to you:
+pwn.college{40jtMVWsV5Rdjq6eUd2zgd_w4VT.dNzM4QDL5MTM1czW}
