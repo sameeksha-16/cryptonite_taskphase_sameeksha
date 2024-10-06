@@ -16,10 +16,21 @@ hacker@man~learning-from-documentation:/$
 #learning complex usage
 here the --printfile has an argument(the path) /flag while it itself is an argument to /challenge/challenge
 
-
-
 sameeksha03@DESKTOP-965QKSJ:~$  ssh -i ./key hacker@dojo.pwn.college
 Connected!
 hacker@man~learning-complex-usage:~$ /challenge/challenge --printfile /flag
+
+
+
+
+#reading manuals
+here we use the man command followed by the argument and it gives the manual for the given argument. Using the information we can access to the flag
+
+hacker@man~reading-manuals:~$ cd /
+hacker@man~reading-manuals:/$ ./challenge
+ssh-entrypoint: ./challenge: Is a directory
+hacker@man~reading-manuals:/$ cd challenge
+hacker@man~reading-manuals:/challenge$ ./challenge --ujdass 445
+Correct usage! Your flag: pwn.college{QJujdFassPHBbLE4hRPIpKXibvl.dRTM4QDL5MTM1czW}
 Correct argument! Here is the /flag file:
 pwn.college{UDxpg-oZ9V2uXyqdYa3BpfHoXr9.dVjM5QDL5MTM1czW}
