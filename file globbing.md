@@ -58,3 +58,14 @@ hacker@globbing~mixing-globs:/challenge/files$ /challenge/run [epc]*
 You got it! Here is your flag!
 pwn.college{M-dKxKl0s9IJvh1xnDJlEjNONZ_.dVjM4QDL5MTM1czW}
 ```
+
+
+# EXCLUSIONARY GLOBBING
+
+
+```Connected!
+hacker@globbing~exclusionary-globbing:~$ cd /challenge/files
+hacker@globbing~exclusionary-globbing:/challenge/files$ /challenge/run [^pwn]*
+You got it! Here is your flag!
+pwn.college{Q0XYsLBFDWsyLlRejkoFipNQ0K-.dZjM4QDL5MTM1czW}
+```
