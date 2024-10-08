@@ -58,3 +58,44 @@ Here is your flag:
 pwn.college{UnD_8s9sKgbj2NVMWIm3rut_ccb.dlDN1QDL5MTM1czW}
 
 ```
+
+
+
+# EXPLICIT
+firstly we will go into the root directory, using cd/ then we will use ./challenge/run to run it . Here '.' helps us to remain in the same directory
+
+```sameeksha03@DESKTOP-965QKSJ:~$  ssh -i ./key hacker@dojo.pwn.college
+Connected!
+hacker@paths~explicit-relative-paths-from-:~$ cd /
+hacker@paths~explicit-relative-paths-from-:/$ ./challenge/run
+Correct!!!
+./challenge/run is a relative path, invoked from the right directory!
+Here is your flag:
+pwn.college{sSc-DcIIYKXz5MUT6Y-NWEqqX4l.dBTN1QDL5MTM1czW}
+```
+
+
+# IMPLICIT RELATIVE PATH
+
+```sameeksha03@DESKTOP-965QKSJ:~$ ssh -i ./key hacker@dojo.pwn.college
+Connected!
+hacker@paths~implicit-relative-path:~$ cd /challenge
+hacker@paths~implicit-relative-path:/challenge$ ./run
+Correct!!!
+./run is a relative path, invoked from the right directory!
+Here is your flag:
+pwn.college{A0SMSbc9TflGpoBamEbzIQgA7W7.dFTN1QDL5MTM1czW}
+
+```
+
+
+# HOME SWEET HOME
+
+```sameeksha03@DESKTOP-965QKSJ:~$ ssh -i ./key hacker@dojo.pwn.college
+Connected!
+hacker@paths~home-sweet-home:~$ touch ~/m
+hacker@paths~home-sweet-home:~$ /challenge/run ~/m
+Writing the file to /home/hacker/m!
+... and reading it back to you:
+pwn.college{40jtMVWsV5Rdjq6eUd2zgd_w4VT.dNzM4QDL5MTM1czW}
+```
