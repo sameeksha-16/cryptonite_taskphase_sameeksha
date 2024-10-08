@@ -1,4 +1,4 @@
-#matching with *
+# matching with *
 now we need to use '*' to navigate through cd to challenge in less than 4 characters. since we are already in our home directory we will use command cd /ch* to get into th echallenge directory and then run to get the flag
 
 hacker@globbing~matching-with-:~$ cd /ch*
@@ -19,7 +19,7 @@ pwn.college{0IovPNlYhcdoWpW8eyJBWejfIay.dJjM4QDL5MTM1czW}
 
 
 
-#matching with []
+# matching with []
 here we first went into /challenge/files then we use the /challenge/run command along with flag_[] command.
 
 
@@ -35,7 +35,7 @@ pwn.college{MdKD5JILsBPEyGYrUPzkDm_1Mky.dNjM4QDL5MTM1czW}
 
 
 
-#matching paths with []
+# matching paths with []
 
 sameeksha03@DESKTOP-965QKSJ:~$  ssh -i ./key hacker@dojo.pwn.college
 Connected!
