@@ -99,3 +99,28 @@ Writing the file to /home/hacker/m!
 ... and reading it back to you:
 pwn.college{40jtMVWsV5Rdjq6eUd2zgd_w4VT.dNzM4QDL5MTM1czW}
 ```
+
+
+# ELSEWERE
+Here we were required to use the /challenge/run code on which it gave the path to the appropriate directory to which we were supposed to go. next i entered into the directory using cd command and again execueted the /challenge/run command which ultimately gave me the flag
+
+
+```
+sameeksha03@DESKTOP-965QKSJ:~$ ssh -i ./key hacker@dojo.pwn.college
+Connected!
+hacker@paths~position-elsewhere:~$ cd
+hacker@paths~position-elsewhere:~$ /
+ssh-entrypoint: /: Is a directory
+hacker@paths~position-elsewhere:~$ cd/
+ssh-entrypoint: cd/: No such file or directory
+hacker@paths~position-elsewhere:~$ /challenge/run
+Incorrect...
+You are not currently in the /proc/67 directory.
+Please use the `cd` utility to change directory appropriately.
+hacker@paths~position-elsewhere:~$ cd /proc/67
+hacker@paths~position-elsewhere:/proc/67$ /challenge/run
+Correct!!!
+/challenge/run is an absolute path, invoked from the right directory!
+Here is your flag:
+pwn.college{8CT151OMtf01i0JVdZaPMlCEuN0.ddDN1QDL5MTM1czW}
+
