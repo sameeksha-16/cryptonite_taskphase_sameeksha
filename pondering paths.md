@@ -24,3 +24,22 @@ pwn.college{I_jy6ejVGQbnyRNw-Eq8CE8Uh1c.dVDN1QDL5MTM1czW}
 hacker@paths~program-and-absolute-paths:~$
 ```
 
+
+# POSITION YET ELSEWHERE
+
+```sameeksha03@DESKTOP-965QKSJ:~$ ssh -i ./key hacker@dojo.pwn.college
+Connected!
+hacker@paths~position-yet-elsewhere:~$ cd/
+ssh-entrypoint: cd/: No such file or directory
+hacker@paths~position-yet-elsewhere:~$ /challenge/run
+Incorrect...
+You are not currently in the /var/lib/apt/lists directory.
+Please use the `cd` utility to change directory appropriately.
+hacker@paths~position-yet-elsewhere:~$ cd /var/lib/apt/lists
+hacker@paths~position-yet-elsewhere:/var/lib/apt/lists$ /challenge/run
+Correct!!!
+/challenge/run is an absolute path, invoked from the right directory!
+Here is your flag:
+pwn.college{MAQs3nTohCI5NBI-IFK4LfpHGUa.dhDN1QDL5MTM1czW}
+
+```
