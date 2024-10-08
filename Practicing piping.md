@@ -124,3 +124,9 @@ the value 'COLLEGE' out of it!
 Here is your flag:
 pwn.college{AoHAoUOvce0wjTOe-cuEDnqO6AB.dBzN1QDL5MTM1czW}
 ```
+
+
+# GREPPING STORED RESULTS
+
+hacker@piping~grepping-stored-results:~$ grep 'pwn.college*' /tmp/data.txt
+pwn.college{k3PzMC0gmInpcmUif0TBjkRIaec.dhTM4QDL5MTM1czW}
