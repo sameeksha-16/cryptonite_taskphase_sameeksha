@@ -208,3 +208,26 @@ hacker@piping~grepping-errors:~$ /challenge/run 2>&1 | grep "pwn.college*"
 [PASS] Success! You have satisfied all execution requirements.
 pwn.college{UZaivi5JQ3BbAGpAxiSjb2ovn4i.dVDM5QDL5MTM1czW}
 ```
+
+
+
+# DUPLICATING PIPED DATA WITH TEE
+
+we are using tee command to debugg code ,this command gives the  output of first command to the second command. the pipe symbol is used to connect the output and input of commands.
+
+```
+hacker@piping~duplicating-piped-data-with-tee:/$ /challenge/pwn | tee output | /challenge/college
+Processing...
+The input to 'college' does not contain the correct secret code! This code
+should be provided by the 'pwn' command. HINT: use 'tee' to intercept the
+output of 'pwn' and figure out what the code needs to be.
+hacker@piping~duplicating-piped-data-with-tee:/$ cat output
+Usage: /challenge/pwn --secret [SECRET_ARG]
+
+SECRET_ARG should be "QnpqlNt7"
+hacker@piping~duplicating-piped-data-with-tee:/$ /challenge/pwn --secret "QnpqlNt7" | /challenge/college
+Processing...
+Correct! Passing secret value to /challenge/college...
+Great job! Here is your flag:
+pwn.college{QnpqlNt7GVvXZpBzJ8nh98cs0X6.dFjM5QDL5MTM1czW}
+```
