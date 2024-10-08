@@ -10,4 +10,17 @@ pwn.college{gB4eFc5gPZEdMtjNCspJKA40DqZ.dhzN5QDL5MTM1czW}
 
 ```
 
+# PROGRAM AND ABSOLUTE PATHS
+
+after connection
+each directory can have other directories or files.here the challenge directory is in the root directory so /challenge. morover the run challenge is in the challenge directory so /challenge/run
+
+```sameeksha03@DESKTOP-965QKSJ:~$  ssh -i ./key hacker@dojo.pwn.college
+Connected!
+hacker@paths~program-and-absolute-paths:~$ /challenge/run
+Correct!!!
+/challenge/run is an absolute path! Here is your flag:
+pwn.college{I_jy6ejVGQbnyRNw-Eq8CE8Uh1c.dVDN1QDL5MTM1czW}
+hacker@paths~program-and-absolute-paths:~$
+```
 
