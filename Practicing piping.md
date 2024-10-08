@@ -65,8 +65,6 @@ the first write directly to the file, and the second write, I'll do to stdout
 (if it's pointing at the file). If you redirect the output in append mode, the
 second write will append to (rather than overwrite) the first write, and you'll
 get the whole flag!
-hacker@piping~appending-output:~$ stdout >> /home/hacker/the-flag
-ssh-entrypoint: stdout: command not found
 hacker@piping~appending-output:~$ cat /home/hacker/the-flag
  |
 \|/ This is the first half:
