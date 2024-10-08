@@ -1,4 +1,4 @@
-#learning from documentation
+# learning from documentation
 
 sameeksha03@DESKTOP-965QKSJ:~$ ssh -i ./key hacker@dojo.pwn.college
 Connected!
@@ -13,7 +13,7 @@ hacker@man~learning-from-documentation:/$
 
 
 
-#learning complex usage
+# learning complex usage
 here the --printfile has an argument(the path) /flag while it itself is an argument to /challenge/challenge
 
 sameeksha03@DESKTOP-965QKSJ:~$  ssh -i ./key hacker@dojo.pwn.college
@@ -23,7 +23,7 @@ hacker@man~learning-complex-usage:~$ /challenge/challenge --printfile /flag
 
 
 
-#reading manuals
+# reading manuals
 here we use the man command followed by the argument and it gives the manual for the given argument. Using the information we can access to the flag
 
 hacker@man~reading-manuals:~$ cd /
@@ -37,7 +37,7 @@ pwn.college{UDxpg-oZ9V2uXyqdYa3BpfHoXr9.dVjM5QDL5MTM1czW}
 
 
 
-#searching manuals
+# searching manuals
 to search use '/' followed by the keyword, it will highlight the mathches next use 'n' to go to next result and 'N' to go to the previous result.
 
 sameeksha03@DESKTOP-965QKSJ:~$ ssh -i ./key hacker@dojo.pwn.college
