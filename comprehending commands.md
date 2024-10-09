@@ -99,10 +99,10 @@ hacker@commands~hidden-files:/$ cat /.flag-3209247525160
 pwn.college{MxIB9KyoWeoGBnofbwWyT0dVyIo.dBTN4QDL5MTM1czW}
 
 ```
-#
+# THE EPIC FILESYSTEM QUEST
 a lot of patience is required first of all.the clues keep coming up and we need to continuously enter into directory , check contenets and read it to get the next clue until we get the flag.
 
-
+```
 
 sameeksha03@DESKTOP-965QKSJ:~$  ssh -i ./key hacker@dojo.pwn.college
 Connected!
@@ -191,15 +191,17 @@ CONGRATULATIONS! Your perserverence has paid off, and you have found the flag!
 It is: pwn.college{8iz_Sh8bRKg28PNtH41SV_znOZw.dljM4QDL5MTM1czW}
 
 
+```
 
 
 
 
+# MAKING DIRECTORIES
 
-#making directories 
 here we use the mkdir command to create a directory pwn next we go into the directory using cd command and make a file named college using touch command.
 just to check if the file has been created or not i have used the ls command.
 
+```
 sameeksha03@DESKTOP-965QKSJ:~$  ssh -i ./key hacker@dojo.pwn.college
 Connected!
 hacker@commands~making-directories:~$ cd /tmp
@@ -212,12 +214,13 @@ hacker@commands~making-directories:/tmp/pwn$ /challenge/run
 Success! Here is your flag:
 pwn.college{AL970vxMe4GjCZZAgKC3oPo9UpW.dFzM4QDL5MTM1czW}
 
+```
 
+# finding files
 
-#finding files
 here i used find command with specifying the name of the file that is 'flag'. it gave me a list of paths which led to flag file.i read the contents one by one of which permission wasn't denied until i got the flag.
 
-
+```
 hacker@commands~finding-files:~$ find / -name flag
 find: ‘/tmp/tmp.MiOQGWw5Zc’: Permission denied
 find: ‘/etc/ssl/private’: Permission denied
@@ -265,10 +268,11 @@ cat: /usr/local/share/radare2/5.9.5/flag: Is a directory
 hacker@commands~finding-files:~$ cat /usr/share/racket/pkgs/errortrace-lib/errortrace/lang/compiled/flag
 
 
-
+```
 
 #linking files
 
+```
 sameeksha03@DESKTOP-965QKSJ:~$ ssh -i ./key hacker@dojo.pwn.college
 Connected!
 hacker@commands~linking-files:~$ ln -s /flag /home/hacker/not-the-flag
@@ -278,5 +282,5 @@ About to read out the /home/hacker/not-the-flag file!
 pwn.college{I_DespzLO7n3rUnepNk4spPGxtN.dlTM1UDL5MTM1czW}
 pwn.college{Mp89SXWWvJg-zVPuuQrlNtBQEbN.dJzM4QDL5MTM1czW}hacker@commands~finding-files:~$
 
-
+```
 
