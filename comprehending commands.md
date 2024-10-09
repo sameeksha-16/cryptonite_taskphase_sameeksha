@@ -26,7 +26,7 @@ pwn.college{0OHXaLJQfK6TXM3zJVv0A7rggtr.dBjM5QDL5MTM1czW}
 
 ```
 
-#grepping for a needle in haystack
+# grepping for a needle in haystack
 
 
 if the file we want to read is too large and we just want to search for particularly few lines in the file instead of using cat we can use grep. this will help us to find string with that particular substring in the file whose absolute path is mentioned
@@ -38,7 +38,7 @@ pwn.college{Ecttw1egpoYsMJ9CtWyCjpRoQKx.ddTM4QDL5MTM1czW}
 
 ```
 
-#listing files
+# listing files
 
 
 the ls command is used when we want to know what files or directories are there in the argument of 'ls <>'.here on doing ls /challenge we could see that the usual run command was renamed to something else so we ran the file accordingly to get the flag.
@@ -55,7 +55,7 @@ pwn.college{cm6j6opw7uACTwoQasoM_30ZWaN.dhjM4QDL5MTM1czW}
 
 ```
 
-#touching files
+# touching files
 
 here we learnt how to create files using 'touch' command. firstly we went into a directory tmp using cd command and then we created two files namely 'pwn' and 'college' in it.
 
@@ -70,7 +70,7 @@ pwn.college{0wMcCCWG8hh6VDbuPG_jrOJSrfa.dBzM4QDL5MTM1czW}
 
 ```
 
-#removing files
+# removing files
 
 if we have excess files in a directory we can use this command to remove them. Here a delet_me file was created inside the home directory and we deleted it using rm command.
 
@@ -84,7 +84,7 @@ pwn.college{MvT8f5pIUXOIYz708hK-FcxmsdQ.dZTOwUDL5MTM1czW}
 
 ```
 
-#hidden files
+# hidden files
 
 so while using ls command it doesn't display all the files it hides the ones which begin with a '.' so to view that we need to use the '-a' with the ls command.we can first go into the '/' directory and then use 'ls -a' command or else we can directly use 'ls -a /' command to get the location of flag file.next to view the contents we need to ise the cat command.
 
@@ -270,7 +270,7 @@ hacker@commands~finding-files:~$ cat /usr/share/racket/pkgs/errortrace-lib/error
 
 ```
 
-#linking files
+# linking files
 
 ```
 sameeksha03@DESKTOP-965QKSJ:~$ ssh -i ./key hacker@dojo.pwn.college
