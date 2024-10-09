@@ -231,3 +231,19 @@ Correct! Passing secret value to /challenge/college...
 Great job! Here is your flag:
 pwn.college{QnpqlNt7GVvXZpBzJ8nh98cs0X6.dFjM5QDL5MTM1czW}
 ```
+
+
+
+
+# WRITING TO MULTIPLE PROGRAMS
+
+here we learnt how tee command can be used to duplicate data to a file and a command.here it directed the output of /challenge/hack to /challenge/the and /challenge/planet.
+
+```
+hacker@piping~writing-to-multiple-programs:~$ /challenge/hack | tee >(/challenge/the) >(/challenge/planet)
+This secret data must directly and simultaneously make it to /challenge/the and
+/challenge/planet. Don't try to copy-paste it; it changes too fast.
+291661988475722870
+Congratulations, you have duplicated data into the input of two programs! Here
+is your flag:
+pwn.college{scpmU_G2Y3AU0IAMA_kiWxMzsx-.dBDO0UDL5MTM1czW}```
