@@ -1,23 +1,21 @@
 # the cat command
 this command conactenates whatever argument is provided and if noting is mentioned it simply  returns whatever is present in the terminal
-
+```
 sameeksha03@DESKTOP-965QKSJ:~$  ssh -i ./key hacker@dojo.pwn.college
 Connected!
 hacker@commands~cat-not-the-pet-but-the-command:~$ cat ~/flag
 pwn.college{cUp1f4erQBWt_snGO5n7EGQ7rrn.dFzN1QDL5MTM1czW}
 
-
+```
 
 
 
 # more catting practice
 for this we couldn't change the directory using cd so what we did was cat then <absolute path>
 
+```
 sameeksha03@DESKTOP-965QKSJ:~$  ssh -i ./key hacker@dojo.pwn.college
-
-
 Connected!
-
 You cannot use the 'cd' command in this level, and must retrieve the flag by
 absolute path. Plus, I hid the flag in a different directory! You can find it
 in the file /usr/share/mime/flag. Go cat it out **without** cding into that
@@ -26,21 +24,26 @@ hacker@commands~more-catting-practice:~$
 hacker@commands~more-catting-practice:~$ cat /usr/share/mime/flag
 pwn.college{0OHXaLJQfK6TXM3zJVv0A7rggtr.dBjM5QDL5MTM1czW}
 
-
+```
 
 #grepping for a needle in haystack
+
+
 if the file we want to read is too large and we just want to search for particularly few lines in the file instead of using cat we can use grep. this will help us to find string with that particular substring in the file whose absolute path is mentioned
 
-
+```
 Connected!
 hacker@commands~grepping-for-a-needle-in-a-haystack:~$ grep pwn.college /challenge/data.txt
 pwn.college{Ecttw1egpoYsMJ9CtWyCjpRoQKx.ddTM4QDL5MTM1czW}
 
-
+```
 
 #listing files
+
+
 the ls command is used when we want to know what files or directories are there in the argument of 'ls <>'.here on doing ls /challenge we could see that the usual run command was renamed to something else so we ran the file accordingly to get the flag.
 
+```
 sameeksha03@DESKTOP-965QKSJ:~$  ssh -i ./key hacker@dojo.pwn.college
 Connected!
 hacker@commands~listing-files:~$ ls /challenge
@@ -50,11 +53,13 @@ Yahaha, you found me! Here is your flag:
 pwn.college{cm6j6opw7uACTwoQasoM_30ZWaN.dhjM4QDL5MTM1czW}
 
 
-
+```
 
 #touching files
+
 here we learnt how to create files using 'touch' command. firstly we went into a directory tmp using cd command and then we created two files namely 'pwn' and 'college' in it.
 
+```
 Connected!
 hacker@commands~touching-files:~$ cd /tmp
 hacker@commands~touching-files:/tmp$ touch pwn
@@ -63,11 +68,13 @@ hacker@commands~touching-files:/tmp$ /challenge/run
 Success! Here is your flag:
 pwn.college{0wMcCCWG8hh6VDbuPG_jrOJSrfa.dBzM4QDL5MTM1czW}
 
-
+```
 
 #removing files
+
 if we have excess files in a directory we can use this command to remove them. Here a delet_me file was created inside the home directory and we deleted it using rm command.
 
+```
 Connected!
 hacker@commands~removing-files:~$ rm delete_me
 hacker@commands~removing-files:~$ /challenge/check
@@ -75,11 +82,13 @@ Excellent removal. Here is your reward:
 pwn.college{MvT8f5pIUXOIYz708hK-FcxmsdQ.dZTOwUDL5MTM1czW}
 
 
-
+```
 
 #hidden files
+
 so while using ls command it doesn't display all the files it hides the ones which begin with a '.' so to view that we need to use the '-a' with the ls command.we can first go into the '/' directory and then use 'ls -a' command or else we can directly use 'ls -a /' command to get the location of flag file.next to view the contents we need to ise the cat command.
 
+```
 sameeksha03@DESKTOP-965QKSJ:~$  ssh -i ./key hacker@dojo.pwn.college
 Connected!
 hacker@commands~hidden-files:~$ cd /
@@ -89,7 +98,7 @@ hacker@commands~hidden-files:/$ ls -a
 hacker@commands~hidden-files:/$ cat /.flag-3209247525160
 pwn.college{MxIB9KyoWeoGBnofbwWyT0dVyIo.dBTN4QDL5MTM1czW}
 
-
+```
 #
 a lot of patience is required first of all.the clues keep coming up and we need to continuously enter into directory , check contenets and read it to get the next clue until we get the flag.
 
