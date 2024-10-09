@@ -246,4 +246,17 @@ This secret data must directly and simultaneously make it to /challenge/the and
 291661988475722870
 Congratulations, you have duplicated data into the input of two programs! Here
 is your flag:
-pwn.college{scpmU_G2Y3AU0IAMA_kiWxMzsx-.dBDO0UDL5MTM1czW}```
+pwn.college{scpmU_G2Y3AU0IAMA_kiWxMzsx-.dBDO0UDL5MTM1czW}
+```
+
+
+
+# SPLIT PIPING stderr and stdout
+
+the | operator links the stdout of the left command with the stdin of the right command. and 2> redirects errors of /challenge/hack to /challenge/the.
+```
+hacker@piping~split-piping-stderr-and-stdout:~$ /challenge/hack > >( /challenge/planet ) 2> >( /challenge/the )
+Congratulations, you have learned a redirection technique that even experts
+struggle with! Here is your flag:
+pwn.college{olkXX6en7tSATvDcw7-5sT7JPEs.dFDNwYDL5MTM1czW}
+```
