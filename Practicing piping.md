@@ -40,6 +40,8 @@ hacker@piping~redirecting-more-output:~$ cat myflag
 
 # APPENDING OUTPUT 
 
+Using '>' it re writes into the file. we use '>>' to use append into a given file. Here we appended the output of
+/challenge/run into /home/hacker/the-flag ,next it checked if we passed all the tests or not and displayed the flag.
 ```
 sameeksha03@DESKTOP-965QKSJ:~$ ssh -i ./key hacker@dojo.pwn.college
 Connected!
@@ -83,6 +85,9 @@ mode!
 
 
 # REDIRECTING ERRORS
+
+Just like standard output, we can also redirect the error channel of commands.A File Descriptor (FD) is a number the describes a communication channel in Linux.FD 0: Standard Input,FD 1: Standard Output,FD 2: Standard Error. Here we directed the output of /challenge/run to myflag and the errors into instructions file.
+
 ```
 hacker@piping~redirecting-errors:~$ /challenge/run > myflag 2> instructions
 hacker@piping~redirecting-errors:~$ cat myflag
@@ -115,6 +120,7 @@ hacker@piping~redirecting-errors:~$ cat instructions
 
 # REDIRECTING INPUT
 
+first w estored the value college into the pwn file and then we redirected this file into /challenge/run.
 ```Connected!
 hacker@piping~redirecting-input:~$ echo COLLEGE > PWN
 hacker@piping~redirecting-input:~$ /challenge/run < PWN
@@ -127,6 +133,8 @@ pwn.college{AoHAoUOvce0wjTOe-cuEDnqO6AB.dBzN1QDL5MTM1czW}
 
 
 # GREPPING STORED RESULTS
+
+here we Redirected the output of /challenge/run to /tmp/data.txt using '>'.it resulted in thousand lines of text, so we used grep command to get the flag from it.
 
 ```sameeksha03@DESKTOP-965QKSJ:~$ ssh -i ./key hacker@dojo.pwn.college
 Connected!
@@ -155,7 +163,7 @@ pwn.college{k3PzMC0gmInpcmUif0TBjkRIaec.dhTM4QDL5MTM1czW}
 
 # GREPPING LIVE OUTPUT
 
-I n this case we don't require and middle file to find the required info from a file. The the pipe operator will connect the output of the content in left to the contnet(input) in right.
+In this case we don't require and middle file to find the required info from a file. The the pipe operator will connect the output of the content in left to the contnet(input) in right.
 ```Connected!
 hacker@piping~grepping-live-output:~$ /challenge/run | grep 'pwn.college*'
 [INFO] WELCOME! This challenge makes the following asks of you:
