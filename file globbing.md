@@ -10,7 +10,7 @@ pwn.college{cJQRLxCDwl5pZXH8E_iUr-3Mh2m.dFjM4QDL5MTM1czW}
 
 
 # MATCHING WITH '?'
-here the '?' can represent only a single character.
+here the '?' can represent only a single character. Here we used '?' in place of letters l and e in the word challenge.
 ```
 hacker@globbing~matching-with-:~$ cd /?ha??enge
 hacker@globbing~matching-with-:/challenge$ /challenge/run
@@ -22,6 +22,7 @@ pwn.college{0IovPNlYhcdoWpW8eyJBWejfIay.dJjM4QDL5MTM1czW}
 # MATCHING WITH []
 
 here we first went into /challenge/files then we use the /challenge/run command along with flag_[] command.
+the arguments inside the square bracket are used to filter the files.
 
 ```
 sameeksha03@DESKTOP-965QKSJ:~$  ssh -i ./key hacker@dojo.pwn.college
@@ -37,6 +38,8 @@ pwn.college{MdKD5JILsBPEyGYrUPzkDm_1Mky.dNjM4QDL5MTM1czW}
 
 
 # MATCHING PATHS WITH []
+here we ran the /challenge/run with the absolute path /challenge/files to get the desired files.the arguments inside the square bracket are used to filter the files.
+
 
 ```
 sameeksha03@DESKTOP-965QKSJ:~$  ssh -i ./key hacker@dojo.pwn.college
@@ -48,6 +51,7 @@ pwn.college{w_WAYF7Rg57sX8wFM6X8I5lrZMk.dRjM4QDL5MTM1czW}
 
 # MIXING GLOBS
 
+First we entered into the path then i checked the list of files present inside it using the ls command. Then we finally ran the command /challenge/run along with [] to filter the output.
 ```
 sameeksha03@DESKTOP-965QKSJ:~$ ssh -i ./key hacker@dojo.pwn.college
 Connected!
@@ -63,7 +67,7 @@ pwn.college{M-dKxKl0s9IJvh1xnDJlEjNONZ_.dVjM4QDL5MTM1czW}
 
 
 # EXCLUSIONARY GLOBBING
-
+If the first character in the brackets is a ! or (in newer versions of bash) a ^, the glob inverts, and that bracket instance matches characters that aren't listed. Here we went into the path /challenge/files and diplayed the output from command /challenge/run which didn't contain 'p','w' and 'n'.
 
 ```Connected!
 hacker@globbing~exclusionary-globbing:~$ cd /challenge/files
