@@ -16,7 +16,7 @@ pwn.college{QGSYzmHrtcokEdgj0oKI-aqXfVb.dhjNyUDL5MTM1czW}
 
 # introduction to commands
 
-first
+
 
 ```//sameeksha03@DESKTOP-965QKSJ:~$ ssh -i ./key hacker@dojo.pwn.college
 Connected!
