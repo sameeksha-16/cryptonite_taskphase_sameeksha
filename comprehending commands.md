@@ -11,7 +11,7 @@ pwn.college{cUp1f4erQBWt_snGO5n7EGQ7rrn.dFzN1QDL5MTM1czW}
 
 
 # MORE CATTING PRACTICE
-for this we couldn't change the directory using cd so what we did was cat then <absolute path>
+for this we couldn't change the directory using cd so what we did was cat then absolute path.
 
 ```
 sameeksha03@DESKTOP-965QKSJ:~$  ssh -i ./key hacker@dojo.pwn.college
