@@ -19,6 +19,8 @@ here the --printfile has an argument(the path) /flag while it itself is an argum
 sameeksha03@DESKTOP-965QKSJ:~$  ssh -i ./key hacker@dojo.pwn.college
 Connected!
 hacker@man~learning-complex-usage:~$ /challenge/challenge --printfile /flag
+Correct argument! Here is the /flag file:
+pwn.college{UDxpg-oZ9V2uXyqdYa3BpfHoXr9.dVjM5QDL5MTM1czW}
 
 ```
 
