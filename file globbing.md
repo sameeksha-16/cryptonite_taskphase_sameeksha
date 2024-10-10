@@ -1,5 +1,5 @@
 # MATCHING WITH '*'
-now we need to use '*' to navigate through cd to challenge in less than 4 characters. since we are already in our home directory we will use command cd /ch* to get into th echallenge directory and then run to get the flag
+now we need to use * to navigate through cd to challenge in less than 4 characters. since we are already in our home directory we will use command cd /ch* to get into th echallenge directory and then run to get the flag
 ```
 hacker@globbing~matching-with-:~$ cd /ch*
 hacker@globbing~matching-with-:/challenge$ /challenge/run
