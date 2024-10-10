@@ -120,7 +120,7 @@ hacker@piping~redirecting-errors:~$ cat instructions
 
 # REDIRECTING INPUT
 
-first w estored the value college into the pwn file and then we redirected this file into /challenge/run.
+first we stored the value college into the pwn file and then we redirected this file into /challenge/run.
 ```Connected!
 hacker@piping~redirecting-input:~$ echo COLLEGE > PWN
 hacker@piping~redirecting-input:~$ /challenge/run < PWN
