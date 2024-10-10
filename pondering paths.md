@@ -1,5 +1,5 @@
 # THE ROOT
-the path always begins with a '/' and is called absolute path. linux  has a root (written as /). The root of the filesystem is a directory, and every directory can contain other directories and files.
+the path always begins with a '/' . linux  has a root (written as /). The root of the filesystem is a directory, and every directory can contain other directories and files.
 
 ```sameeksha03@DESKTOP-965QKSJ:~$ ssh -i ./key hacker@dojo.pwn.college
 Connected!
