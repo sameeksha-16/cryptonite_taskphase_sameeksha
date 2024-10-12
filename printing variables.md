@@ -85,4 +85,15 @@ PATH=/run/challenge/bin:/run/workspace/bin:/usr/local/sbin:/usr/local/bin:/usr/s
 _=/run/workspace/bin/env
 ```
 
-# 
+# STORING COMMAND PROMPT
+
+In this challenge we learnt how to assign output from a command into a variable ,for this we used the '$' sign. Here we assigned the output of /challenge/run to the variable PWN. Then we used the echo command ``` echo $PWN ``` to print the contents and get the flag.
+
+```
+Connected!
+hacker@variables~storing-command-output:~$ PWN=$(/challenge/run)
+Congratulations! You have read the flag into the PWN variable. Now print it out
+and submit it!
+hacker@variables~storing-command-output:~$ echo $PWN
+pwn.college{s3dj8M0yRzqE3toFH4lfuScK0-i.dVzN0UDL5MTM1czW}
+'''
