@@ -15,3 +15,13 @@ Here we assign the value COLLEGE to the variable PWN.
 You've set the PWN variable properly! As promised, here is the flag:
 pwn.college{AqabD1YfDRGFNB_TYOHnAj2iAGD.dlTN1QDL5MTM1czW}
   ```
+# MULTI WORD VARIABLES
+
+In this challenge, if we want to assign value which contains spaces to a particular variable then we need to mention the value within " " or else as soon as it encounters a space it will stop the assigning process.
+
+```
+Connected!
+hacker@variables~multi-word-variables:~$ PWN="COLLEGE YEAH"
+You've set the PWN variable properly! As promised, here is the flag:
+pwn.college{83dia9bcUccDcpqImqPJGUYrvlg.dBjN1QDL5MTM1czW}
+```
