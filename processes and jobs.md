@@ -112,3 +112,22 @@ root          92      90  0 15:51 pts/0    00:00:00 ps -f
 Yay, I found another version of me! Here is the flag:
 pwn.college{8XvUfMGyHG1KzUjypBn3z50Pe3q.dVDN4QDL5MTM1czW}
 ```
+
+
+# RESUMING PROCESSES
+
+```
+Connected!
+hacker@processes~resuming-processes:~$ /challenge/run
+Let's practice resuming processes! Suspend me with Ctrl-Z, then resume me with
+the 'fg' command! Or just press Enter to quit me!
+^Z
+[1]+  Stopped                 /challenge/run
+hacker@processes~resuming-processes:~$ fg
+/challenge/run
+I'm back! Here's your flag:
+pwn.college{g1KlCq1xi-TN9PwC0hMMnCpEJhU.dZDN4QDL5MTM1czW}
+Don't forget to press Enter to quit me!
+```
+
+#
