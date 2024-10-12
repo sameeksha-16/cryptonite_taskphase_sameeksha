@@ -76,4 +76,39 @@ I could give you the flag... but I won't, until this process exits. Remember,
 you can force me to exit with Ctrl-C. Try it now!
 ^C
 Good job! You have used Ctrl-C to interrupt this process! Here is your flag:
-pwn.college{Yk_f1uHtVAJPNouCj1IuEOSvysI.dNDN4QDL5MTM1czW}```
+pwn.college{Yk_f1uHtVAJPNouCj1IuEOSvysI.dNDN4QDL5MTM1czW}
+```
+
+# SUSPENDING PROCESSES
+
+```
+Connected!
+hacker@processes~suspending-processes:~$ ./run
+ssh-entrypoint: ./run: No such file or directory
+hacker@processes~suspending-processes:~$ /challenge/run
+I'll only give you the flag if there's already another copy of me running in
+this terminal... Let's check!
+
+UID          PID    PPID  C STIME TTY          TIME CMD
+root          83      65  0 15:50 pts/0    00:00:00 bash /challenge/run
+root          85      83  0 15:50 pts/0    00:00:00 ps -f
+
+I don't see a second me!
+
+To pass this level, you need to suspend me and launch me again! You can
+background me with Ctrl-Z or, if you're not ready to do that for whatever
+reason, just hit Enter and I'll exit!
+^Z
+[1]+  Stopped                 /challenge/run
+hacker@processes~suspending-processes:~$ /challenge/run
+I'll only give you the flag if there's already another copy of me running in
+this terminal... Let's check!
+
+UID          PID    PPID  C STIME TTY          TIME CMD
+root          83      65  0 15:50 pts/0    00:00:00 bash /challenge/run
+root          90      65  0 15:51 pts/0    00:00:00 bash /challenge/run
+root          92      90  0 15:51 pts/0    00:00:00 ps -f
+
+Yay, I found another version of me! Here is the flag:
+pwn.college{8XvUfMGyHG1KzUjypBn3z50Pe3q.dVDN4QDL5MTM1czW}
+```
