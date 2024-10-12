@@ -96,4 +96,16 @@ Congratulations! You have read the flag into the PWN variable. Now print it out
 and submit it!
 hacker@variables~storing-command-output:~$ echo $PWN
 pwn.college{s3dj8M0yRzqE3toFH4lfuScK0-i.dVzN0UDL5MTM1czW}
-'''
+```
+
+# READING INPUT
+In this we learnt how to input variables using the read command,the echo command is udes to output the value in variables while read command is for inputting. Here we can use ``` read "input :" PWN ```  to get input from user but i used ``` read PWN ``` .to input the value as COLLEGE.
+
+```
+Connected!
+hacker@variables~reading-input:~$ read PWN
+COLLEGE
+You've set the PWN variable properly! As promised, here is the flag:
+pwn.college{kmHoaHh2ME_sWC8W_gsgDti1_OK.dhzN1QDL5MTM1czW}
+```
+
