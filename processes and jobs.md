@@ -229,3 +229,15 @@ hacker@processes~starting-backgrounded-processes:~$
 Anyways! Here is your flag!
 pwn.college{M40qUwrEo_eSiLvS9jN0H9P_zjs.dlDN4QDL5MTM1czW}
 ```
+
+# PROCESS EXIT CODES
+
+``` Connected!
+hacker@processes~process-exit-codes:~$ /challenge/get-code $?
+Exiting with an error code!
+hacker@processes~process-exit-codes:~$ echo /challenge/get-code $?
+/challenge/get-code 8
+hacker@processes~process-exit-codes:~$ /challenge/submit-code 8
+CORRECT! Here is your flag:
+pwn.college{0AKBWEWSdx8NJR15W32KAyInoFm.dljN4UDL5MTM1czW}
+```
