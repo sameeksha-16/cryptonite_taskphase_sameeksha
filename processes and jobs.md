@@ -68,7 +68,7 @@ Great job! Here is your payment:
 pwn.college{kG9QfOSwFU9K3J70obnB-A4b3Sk.dJDN4QDL5MTM1czW}
 ```
 # INTERUPPTING PROCESSES
-
+Here in this challenge
 
 ```Connected!
 hacker@processes~interrupting-processes:~$ /challenge/run
@@ -115,6 +115,7 @@ pwn.college{8XvUfMGyHG1KzUjypBn3z50Pe3q.dVDN4QDL5MTM1czW}
 
 
 # RESUMING PROCESSES
+The processes which we suspended will come in use in future as it has been resumed and not deleted, so we activate it using the ```fg``` command. Here at the end we ran the command ```/challenge/run``` to get the flag.
 
 ```
 Connected!
@@ -130,4 +131,56 @@ pwn.college{g1KlCq1xi-TN9PwC0hMMnCpEJhU.dZDN4QDL5MTM1czW}
 Don't forget to press Enter to quit me!
 ```
 
-#
+# BACKGROUNDING PROCESSES
+
+Here in this challenge first we ran the command ```/challenge/run``` then we suspended it using the Ctrl-Z, and then we activated it in the background using the ```bg``` command. Next we relaunched it and got the required flag.
+
+```Connected!
+hacker@processes~backgrounding-processes:~$ /challenge/run
+I'll only give you the flag if there's already another copy of me running *and
+not suspended* in this terminal... Let's check!
+
+UID          PID STAT CMD
+root          82 S+   bash /challenge/run
+root          84 R+   ps -o user=UID,pid,stat,cmd
+
+I don't see a second me!
+
+To pass this level, you need to suspend me, resume the suspended process in the
+background, and then launch a new version of me! You can background me with
+Ctrl-Z (and resume me in the background with 'bg') or, if you're not ready to
+do that for whatever reason, just hit Enter and I'll exit!
+^Z
+[1]+  Stopped                 /challenge/run
+hacker@processes~backgrounding-processes:~$ /challenge/run
+I'll only give you the flag if there's already another copy of me running *and
+not suspended* in this terminal... Let's check!
+
+UID          PID STAT CMD
+root          82 T    bash /challenge/run
+root          89 S+   bash /challenge/run
+root          91 R+   ps -o user=UID,pid,stat,cmd
+
+I found a second version of me, but it's suspended! Please resume it in the
+background with the 'bg' command, then run me again.
+hacker@processes~backgrounding-processes:~$ bg
+[1]+ /challenge/run &
+
+
+
+Yay, I'm now running the background! Because of that, this text will probably
+overlap weirdly with the shell prompt. Don't panic; just hit Enter a few times
+to scroll this text out.
+hacker@processes~backgrounding-processes:~$ /challenge/run
+I'll only give you the flag if there's already another copy of me running *and
+not suspended* in this terminal... Let's check!
+
+UID          PID STAT CMD
+root          82 S    bash /challenge/run
+root         103 S    sleep 6h
+root         104 S+   bash /challenge/run
+root         106 R+   ps -o user=UID,pid,stat,cmd
+
+Yay, I found another version of me running in the background! Here is the flag:
+pwn.college{sZIPv2tzP3TPYsAOBhH5R5cK0SX.ddDN4QDL5MTM1czW}
+```
