@@ -1,4 +1,5 @@
 # LISTING PROCESSES
+
 ```
 Connected!
 hacker@processes~listing-processes:~$ ps -ef
@@ -68,7 +69,7 @@ Great job! Here is your payment:
 pwn.college{kG9QfOSwFU9K3J70obnB-A4b3Sk.dJDN4QDL5MTM1czW}
 ```
 # INTERUPPTING PROCESSES
-Here in this challenge
+Here in this challenge, we can suspend the current running process using the ```Ctrl -C ``` command.
 
 ```Connected!
 hacker@processes~interrupting-processes:~$ /challenge/run
@@ -80,7 +81,7 @@ pwn.college{Yk_f1uHtVAJPNouCj1IuEOSvysI.dNDN4QDL5MTM1czW}
 ```
 
 # SUSPENDING PROCESSES
-
+To suspend the current running process , the ```Ctrl-Z``` command is used. Here we first ran the command ```/challenge/run``` command then we suspended the process and ran the same command again to ge the command.
 ```
 Connected!
 hacker@processes~suspending-processes:~$ ./run
