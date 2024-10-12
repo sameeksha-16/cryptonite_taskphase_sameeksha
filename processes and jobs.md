@@ -185,3 +185,30 @@ root         106 R+   ps -o user=UID,pid,stat,cmd
 Yay, I found another version of me running in the background! Here is the flag:
 pwn.college{sZIPv2tzP3TPYsAOBhH5R5cK0SX.ddDN4QDL5MTM1czW}
 ```
+
+# FOREGROUNDING PROCESSES
+Here we ran the command ```/challenge/run```, then we suspended the current process by clicking Ctrl-Z, and let it run in the background usinh ```bg``` command. Next we made it run in the front using ```fg``` command,and finally pressed enter key to get the flag.
+```
+Connected!
+hacker@processes~foregrounding-processes:~$ /challenge/run
+To pass this level, you need to suspend me, resume the suspended process in the
+background, and *then* foreground it without re-suspending it! You can
+background me with Ctrl-Z (and resume me in the background with 'bg') or, if
+you're not ready to do that for whatever reason, just hit Enter and I'll exit!
+^Z
+[1]+  Stopped                 /challenge/run
+hacker@processes~foregrounding-processes:~$ bg
+[1]+ /challenge/run &
+
+
+
+Yay, I'm now running the background! Because of that, this text will probably
+overlap weirdly with the shell prompt. Don't panic; just hit Enter a few times
+to scroll this text out. After that, resume me into the foreground with 'fg';
+I'll wait.
+hacker@processes~foregrounding-processes:~$ fg
+/challenge/run
+YES! Great job! I'm now running in the foreground. Hit Enter for your flag!
+
+pwn.college{IGUhHPk0W9vhOiieh0e5LgjNa0B.dhDN4QDL5MTM1czW}
+```
