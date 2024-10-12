@@ -212,3 +212,20 @@ YES! Great job! I'm now running in the foreground. Hit Enter for your flag!
 
 pwn.college{IGUhHPk0W9vhOiieh0e5LgjNa0B.dhDN4QDL5MTM1czW}
 ```
+# STARTING BACKGROUND PROCESSES
+
+```Connected!
+hacker@processes~starting-backgrounded-processes:~$ /challenge/run
+You've started me in the foreground! You must start me in the background (by
+appending '&' to the command) to get the flag!
+hacker@processes~starting-backgrounded-processes:~$ /challenge/run &
+[1] 102
+
+
+
+Yay, you started me in the background! Because of that, this text will probably
+overlap weirdly with the shell prompt, but you're used to that by now...
+hacker@processes~starting-backgrounded-processes:~$
+Anyways! Here is your flag!
+pwn.college{M40qUwrEo_eSiLvS9jN0H9P_zjs.dlDN4QDL5MTM1czW}
+```
