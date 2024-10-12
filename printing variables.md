@@ -108,4 +108,11 @@ COLLEGE
 You've set the PWN variable properly! As promised, here is the flag:
 pwn.college{kmHoaHh2ME_sWC8W_gsgDti1_OK.dhzN1QDL5MTM1czW}
 ```
+# READING FILES
+In this challenge we learnt how to read files. Here we read the file ``` /challenge/read_me ``` file into the PWN VARIABLE using ``` read PWN < /challenge/read_me ``` command.
 
+```
+hacker@variables~reading-files:~$ read  PWN < /challenge/read_me
+You've set the PWN variable properly! As promised, here is the flag:
+pwn.college{IURQbEciOJpuxNcnK7po52ZWi1x.dBjM4QDL5MTM1czW}
+```
