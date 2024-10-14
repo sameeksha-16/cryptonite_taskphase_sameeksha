@@ -531,3 +531,16 @@ hacker@permissions~permissions-setting-practice:~$ chmod u=r /flag
 hacker@permissions~permissions-setting-practice:~$ cat /flag
 pwn.college{8OBZSfzioSdOSwC53gPRKzWqIbk.dNTM5QDL5MTM1czW}
 ```
+
+# THE SUID BIT 
+```
+Connected!
+hacker@permissions~the-suid-bit:~$ chmod u+s /challenge/getroot
+hacker@permissions~the-suid-bit:~$ cat /flag
+cat: /flag: Permission denied
+hacker@permissions~the-suid-bit:~$ /challenge/getroot
+SUCCESS! You have set the suid bit on this program, and it is running as root!
+Here is your shell...
+root@permissions~the-suid-bit:~# cat /flag
+pwn.college{0-yxc59Zz5apJjLWpyQaMINSONs.dNTM2QDL5MTM1czW}
+```
