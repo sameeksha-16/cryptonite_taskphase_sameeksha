@@ -67,14 +67,9 @@ pwn.college{snBEWSc1rDYv3WPBkAHrC5alm2G.dJzNyUDL5MTM1czW}
 In this challenge, we learnt how to change permissions related to files, as a user,group or as other users. This can be done using the ``` chmod``` command along with mentioning who +/- what has to be changed . Under who we mention who's permission has to be changed and under what we mention what permissions need to be given.
 
 ```
+sameeksha03@DESKTOP-965QKSJ:~$  ssh -i ./key hacker@dojo.pwn.college
 Connected!
-hacker@permissions~changing-permissions:~$ chmod u+r /flag
-hacker@permissions~changing-permissions:~$ cat /flag
-cat: /flag: Permission denied
-hacker@permissions~changing-permissions:~$ chmod u+r *
-hacker@permissions~changing-permissions:~$ cat /flag
-cat: /flag: Permission denied
-hacker@permissions~changing-permissions:~$ chmod ugo+r /flag
+hacker@permissions~changing-permissions:~$ chmod g+r /flag
 hacker@permissions~changing-permissions:~$ cat /flag
 pwn.college{cw1PJws1zl_X9QK6Zy062v4LPur.dNzNyUDL5MTM1czW}
 ```
