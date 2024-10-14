@@ -49,3 +49,15 @@ drwxr-xr-x 2 hacker hacker 4096 Oct  6 07:10 sam
 hacker@permissions~groups-and-files:~$ cat /flag
 pwn.college{ABfryn-UgocLMBbFkF8LIRSmHj7.dFzNyUDL5MTM1czW}
 ```
+
+# FUN WITH GROUP NAMES
+In this challenge our username that is hacker wasn't present in the usual group that is hacker so firat we found our grpname using the ``` id ``` command. Next we used the ``` chgrp ``` command to change the group name and then we ran the /flag command to get the flag.
+
+```
+Connected!
+hacker@permissions~fun-with-groups-names:~$ id
+uid=1000(hacker) gid=1000(grp18283) groups=1000(grp18283)
+hacker@permissions~fun-with-groups-names:~$ chgrp grp18283 /flag
+hacker@permissions~fun-with-groups-names:~$ cat /flag
+pwn.college{snBEWSc1rDYv3WPBkAHrC5alm2G.dJzNyUDL5MTM1czW}
+```
