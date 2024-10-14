@@ -73,3 +73,15 @@ hacker@permissions~changing-permissions:~$ chmod g+r /flag
 hacker@permissions~changing-permissions:~$ cat /flag
 pwn.college{cw1PJws1zl_X9QK6Zy062v4LPur.dNzNyUDL5MTM1czW}
 ```
+
+# EXECUETABLE FILES
+
+In this challenge we changed the permission of /challenge/run of user to executable form so that we will are able to run the command and get the flag . For this we used the ```chmod``` command along with ```u+x``` to change the permissions.
+```
+hacker@permissions~executable-files:~$ ls -l /challenge/run
+-r--r-xr-x 1 hacker hacker 32 Jul  4 06:37 /challenge/run
+hacker@permissions~executable-files:~$ chmod u+x /challenge/run
+hacker@permissions~executable-files:~$ /challenge/run
+Successful execution! Here is your flag:
+pwn.college{QZclkr1dOxmULFfEqncBg0S2lai.dJTM2QDL5MTM1czW}
+```
