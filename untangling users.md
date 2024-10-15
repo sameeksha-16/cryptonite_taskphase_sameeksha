@@ -39,3 +39,14 @@ zardus@users~cracking-passwords:/home/hacker$ /challenge/run
 Congratulations, you have become Zardus! Here is your flag:
 pwn.college{oWL6bUpJphhkJTuvbv96Hcr4_Sn.ddTN0UDL5MTM1czW}
 ```
+
+# USING SUDO
+
+```
+sameeksha03@DESKTOP-965QKSJ:~$  ssh -i ./key hacker@dojo.pwn.college
+Connected!
+hacker@users~using-sudo:~$ sudo hacker
+sudo: hacker: command not found
+hacker@users~using-sudo:~$ sudo grep pwn.college /flag
+pwn.college{g-snXHw1abs5K7i5CsvFxzM5rcQ.dhTN0UDL5MTM1czW}
+```
