@@ -20,3 +20,22 @@ zardus@users~other-users-with-su:/home/hacker$ /challenge/run
 Congratulations, you have become Zardus! Here is your flag:
 pwn.college{0cDiYQvJvX6WNVOW9-iaSZkm3Wr.dZTN0UDL5MTM1czW}
 ```
+
+# CRACKING PASSWORDS
+
+In this challenge we learnt how to crack the password which might have gotten leaked. For example, backups are often stored, unencrypted and insufficiently protected, on file servers, and this has led to countless data disclosures. Here we try to get the password using the ``` john ``` command . Next we entered the password and ran the /challenge/run command to get the flag.
+
+```
+hacker@users~cracking-passwords:~$  john /challenge/shadow-leak
+Loaded 1 password hash (crypt, generic crypt(3) [?/64])
+Press 'q' or Ctrl-C to abort, almost any other key for status
+aardvark         (zardus)
+1g 0:00:00:20 100% 2/3 0.04764g/s 277.4p/s 277.4c/s 277.4C/s Johnson..buzz
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed
+hacker@users~cracking-passwords:~$ su zardus
+Password:
+zardus@users~cracking-passwords:/home/hacker$ /challenge/run
+Congratulations, you have become Zardus! Here is your flag:
+pwn.college{oWL6bUpJphhkJTuvbv96Hcr4_Sn.ddTN0UDL5MTM1czW}
+```
