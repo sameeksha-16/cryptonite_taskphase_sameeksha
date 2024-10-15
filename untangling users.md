@@ -6,3 +6,17 @@ Password:
 root@users~becoming-root-with-su:/home/hacker# cat /flag
 pwn.college{o8LlTk0ehV1KBZ3jnCPp6SX3aOJ.dVTN0UDL5MTM1czW}
 ```
+
+
+# OTHER USERS WITH SU
+
+Here when we give arguments along with ``` su ``` command instead to switching to root user it switches to the user which is provided as an argument, which in this case is zardus next we provide the password as mentioned and run the /challenge/run command to get the flag.
+
+```
+Connected!
+hacker@users~other-users-with-su:~$ su zardus
+Password:
+zardus@users~other-users-with-su:/home/hacker$ /challenge/run
+Congratulations, you have become Zardus! Here is your flag:
+pwn.college{0cDiYQvJvX6WNVOW9-iaSZkm3Wr.dZTN0UDL5MTM1czW}
+```
