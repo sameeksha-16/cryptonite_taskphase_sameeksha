@@ -32,3 +32,35 @@ hacker@path~adding-commands:~/scripts$ /challenge/run
 Invoking 'win'....
 pwn.college{UoVeTOCxJzCCdQEdihYZ62xZfAQ.dZzNyUDL5MTM1czW}
 ```
+
+# HIJACKING COMMANDS
+
+```
+Connected!
+hacker@path~hijacking-commands:~$ mkdir ~/mybin
+hacker@path~hijacking-commands:~$ echo "This is a fake rm command"
+This is a fake rm command
+hacker@path~hijacking-commands:~$ chmod +x ~/mybin/rm
+chmod: cannot access '/home/hacker/mybin/rm': No such file or directory
+hacker@path~hijacking-commands:~$ ls ~/mybin
+hacker@path~hijacking-commands:~$ ls ~/mybin
+hacker@path~hijacking-commands:~$ nano ~/mybin/rm
+hacker@path~hijacking-commands:~$ chmod +x ~/mybin/rm
+hacker@path~hijacking-commands:~$ rm
+rm: missing operand
+Try 'rm --help' for more information.
+hacker@path~hijacking-commands:~$ echo $PATH
+/run/challenge/bin:/run/workspace/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+hacker@path~hijacking-commands:~$ export PATH=~/mybin:$PATH
+hacker@path~hijacking-commands:~$ ls -l ~/mybin/rm
+-rwxr-xr-x 1 hacker hacker 72 Oct 18 10:04 /home/hacker/mybin/rm
+hacker@path~hijacking-commands:~$ rm
+This is a fake rm command. No files will be deleted.
+hacker@path~hijacking-commands:~$ nano ~/mybin/rm
+hacker@path~hijacking-commands:~$ rm
+cat: /flag: Permission denied
+hacker@path~hijacking-commands:~$ /challenge/run
+Trying to remove /flag...
+Found 'rm' command at /home/hacker/mybin/rm. Executing!
+pwn.college{kmWtc-E-vwqKPVUDFTGLtbk1CFF.ddzNyUDL5MTM1czW}
+```
