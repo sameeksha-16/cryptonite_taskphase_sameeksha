@@ -1,5 +1,6 @@
 # THE PATH VARIABLE
-
+In this challenge, we need to make it so that /challenge/run cannot use the rm command in order to get flag.
+Here we set the PATH to an empty string so that it couldn't accesss the rm command.
 ```
 Connected!
 hacker@path~the-path-variable:~$ PATH=""
@@ -10,7 +11,8 @@ The flag is still there! I might as well give it to you!
 pwn.college{U2MPipjY3dhbhXDzE5dniLoyU_R.dZzNwUDL5MTM1czW}
 ```
 # SETTING PATH
-
+Here in this challenge on running the /challenge/run it searches for hw win command ,and this is present in the
+directory '/challenge/more_commands/' so to access it we set the PATH to it and ran the /challenge/run command to get the flag.
 ```
 hacker@path~setting-path:~$ PATH=/challenge/more_commands/
 hacker@path~setting-path:~$ /challenge/run
