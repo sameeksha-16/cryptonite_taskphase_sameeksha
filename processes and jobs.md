@@ -1,5 +1,5 @@
 # LISTING PROCESSES
-
+Here in this challenge the /challenge/run file has been renamed into a random filename and  i used the ps -ef command to get it .
 ```
 Connected!
 hacker@processes~listing-processes:~$ ps -ef
@@ -214,15 +214,14 @@ pwn.college{IGUhHPk0W9vhOiieh0e5LgjNa0B.dhDN4QDL5MTM1czW}
 ```
 # STARTING BACKGROUND PROCESSES
 
+Here in this challenge we ran the /challenge/run command in the background aand then we followed the instructions to get the flag
+
 ```Connected!
 hacker@processes~starting-backgrounded-processes:~$ /challenge/run
 You've started me in the foreground! You must start me in the background (by
 appending '&' to the command) to get the flag!
 hacker@processes~starting-backgrounded-processes:~$ /challenge/run &
 [1] 102
-
-
-
 Yay, you started me in the background! Because of that, this text will probably
 overlap weirdly with the shell prompt, but you're used to that by now...
 hacker@processes~starting-backgrounded-processes:~$
@@ -231,11 +230,13 @@ pwn.college{M40qUwrEo_eSiLvS9jN0H9P_zjs.dlDN4QDL5MTM1czW}
 ```
 
 # PROCESS EXIT CODES
+Here in this challenge we ran the ```/challenge/get-code $?``` command followed by ```echo``` command to get the secret code. Next we wrote the code as an argument to ``` /challenge/submit-code``` and got the flag.
 
-``` Connected!
+```
+Connected!
 hacker@processes~process-exit-codes:~$ /challenge/get-code $?
 Exiting with an error code!
-hacker@processes~process-exit-codes:~$ echo /challenge/get-code $?
+hacker@processes~process-exit-codes:~$echo /challenge/get-code $?
 /challenge/get-code 8
 hacker@processes~process-exit-codes:~$ /challenge/submit-code 8
 CORRECT! Here is your flag:
