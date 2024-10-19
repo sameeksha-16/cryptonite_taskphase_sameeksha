@@ -26,7 +26,7 @@ pwn.college{EJcigy0_zKPofVH2Nqx0hxkFbnC.dFTM2QDL5MTM1czW}
 
 
 # GROUPS AND FILES
-
+In this challenge, the /flag file is owned by root user and only members of the root group can access it. We need to change the group owner to hacker in order to access it. For this I used the chgrp command to change the ownership to hacker and then ran the ```cat /flag``` command to get the flag.
 ```
 Connected!
 hacker@permissions~groups-and-files:~$ chgrp hacker /flag
@@ -87,7 +87,7 @@ pwn.college{QZclkr1dOxmULFfEqncBg0S2lai.dJTM2QDL5MTM1czW}
 ```
 
 # PERMISSION TWEAKING PRACTICE
-
+Here we combined all our knowledge from 
 ```
 hacker@permissions~permission-tweaking-practice:~$ /challenge/run
 Round 0 (of 8)!
@@ -533,6 +533,8 @@ pwn.college{8OBZSfzioSdOSwC53gPRKzWqIbk.dNTM5QDL5MTM1czW}
 ```
 
 # THE SUID BIT 
+
+In this challenge, we need to add the SUID bit to /challenge/getroot in order to spawn a root shell where we can cat out the file. Then we ran the /challenge/getroot command to get the flag.
 ```
 Connected!
 hacker@permissions~the-suid-bit:~$ chmod u+s /challenge/getroot
