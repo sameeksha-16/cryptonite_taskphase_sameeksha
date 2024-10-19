@@ -41,7 +41,7 @@ pwn.college{oWL6bUpJphhkJTuvbv96Hcr4_Sn.ddTN0UDL5MTM1czW}
 ```
 
 # USING SUDO
-
+Here we were supposed to use sudo to read the flag.
 ```
 sameeksha03@DESKTOP-965QKSJ:~$  ssh -i ./key hacker@dojo.pwn.college
 Connected!
