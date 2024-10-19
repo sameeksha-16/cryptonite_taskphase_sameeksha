@@ -22,6 +22,7 @@ pwn.college{cGuznNeptYyJRW87lmP3qHF9AWU.dVzNyUDL5MTM1czW}
 ```
 
 # ADDING COMMANDS
+Here I created a script called win with the nano command and entered the commands,next i made it execuetable with the chmod command and finally ran the /challenge/run command to get the flag.
 ```
 hacker@path~adding-commands:~$ mkdir -p /home/hacker/scripts
 cd /home/hacker/scripts
